@@ -26,9 +26,23 @@ else:
     print("  [ ] Ontbiijt + 2x Metformine + 1x Gliclazide")
 print("")
 print("HUISDIEREN:")
-print("  [ ] Kattenbakken verschonen + Cat Box Fresh")
-print("  [ ] Cavia Kooien: natte plekken + bijvullen")
-print("  [ ] Water en voer checken")
+kattenbak = input("Kattenbakken verschoond? (j/n): ")
+if kattenbak == "j":
+    print("  [x] Kattenbakken verschonen + Cat Box Fresh")
+else:
+    print("  [ ] Kattenbakken verschonen + Cat Box Fresh")
+
+kooien = input("Cavia kooien gedaan? (j/n): ")
+if kooien == "j":
+    print("  [x] Cavia kooien: natte plekken + bijvullen")
+else:
+    print("  [ ] Cavia kooien: natte plekken + bijvullen")
+
+voer = input("Water en voer gecheckt? (j/n): ")
+if voer == "j":
+    print("  [x] Water en voer checken")
+else:
+    print("  [ ] Water en voer Checken")
 print("")
 print("MEDICIJNEN AVOND:")
 print("  [ ] Avondeten + 2x Metformine")
