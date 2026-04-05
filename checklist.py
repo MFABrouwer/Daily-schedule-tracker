@@ -45,4 +45,20 @@ else:
     print("  [ ] Water en voer Checken")
 print("")
 print("MEDICIJNEN AVOND:")
-print("  [ ] Avondeten + 2x Metformine")
+avond = input("Avondeten + 2x Metformine genomen? (J/n): ")
+if avond == "j":
+    print(" [x] Avondeten + 2x Metformine")
+else:
+    print("  [ ] Avond + 2x Metformine")
+
+temazepam = input("Heb je Temazepam nodig vanavond? (j/n): ")
+if temazepam == "j":
+    genomen = input("Temazepan genomen? (j/n): ")
+    if genomen == "j":
+        print("  [x] Temazepam (slaapondersteuning)")
+    else:
+        print("  [ ] Neem maar snel in! (slaapondersteuning)")
+else:
+    print("  [x] Tamezepam niet nodig vanavond")
+print("")
+print("Checklist Complete! ===")
