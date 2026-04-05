@@ -9,17 +9,21 @@ print("=== Dagelijkse Checklist ===")
 print("Datum:", nu.strftime("%d-%m-%Y"))
 print("Tijd:", nu.strftime("%H:%M:%S"))
 print("")
+print("MEDICIJNEN OCHTEND:")
 print("heb je je Esomeprazol al ingenomen?")
 esomeprazol = input("(j/n): ")
-
 if esomeprazol == "j":
-    print("Top! Zet een timer voor 1 uur.")
+    print("  [x] Esomeprazol nuchter ingenomen")
+    print("  Top zet een timer voor 1 uur.")
 else:
-    print("Vergeet het niet! Nuchter innemen!")
-print("MEDICIJNEN OCHTEND:")
-print("  [ ] Esomeprazol innemen (nuchter!)")
+    print("  [ ] Esomeprazol innemen (nuchter!)") 
+    print("  Vergeet het niet! Nuchter innemen!")
 print("  [ ] 1 uur wachten...")
-print("  [ ] ontbijt + 2x Metformine + 1x Gliclazide")
+ontbijt = input("Ontbijt + Medicijnen genomen? (j/n): ")
+if ontbijt == "j":
+    print("  [x] Ontbijt + 2x Metformine + 1x Gliclazide")
+else:
+    print("  [ ] Ontbiijt + 2x Metformine + 1x Gliclazide")
 print("")
 print("HUISDIEREN:")
 print("  [ ] Kattenbakken verschonen + Cat Box Fresh")
