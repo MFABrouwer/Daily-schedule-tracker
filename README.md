@@ -1,3 +1,5 @@
+![Status](https://img.shields.io/badge/status-on--hold-orange)
+
 # Daily Schedule Tracker 🐾
 
 A command-line Python application for managing daily routines through interactive checklists.
